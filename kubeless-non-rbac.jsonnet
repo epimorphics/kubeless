@@ -211,6 +211,20 @@ local runtime_images ='[
     "fileNameSuffix": ".java"
   },
   {
+    "ID": "kotlin",
+    "compiled": true,
+    "versions": [
+      {
+        "name": "kotlin1.8",
+        "version": "1.8",
+        "runtimeImage": "kubeless/java:1.8",
+        "initImage": "kubeless/java-init:1.8"
+      }
+    ],
+    "depName": "pom.xml",
+    "fileNameSuffix": ".kt"
+  },
+  {
      "ID": "ballerina",
      "compiled": true,
      "versions": [
