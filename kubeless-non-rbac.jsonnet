@@ -30,8 +30,8 @@ local controllerEnv = [
 ];
 
 local functionControllerContainer =
-  container.default("kubeless-function-controller", "kubeless/function-controller:latest") +
-  container.imagePullPolicy("IfNotPresent") +
+  container.default("kubeless-function-controller", "quorauk/kubeless-function-controller:latest") +
+  container.imagePullPolicy("Always") +
   container.env(controllerEnv);
 
 local httpTriggerControllerContainer =
